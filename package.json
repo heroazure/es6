@@ -4,7 +4,8 @@
   "description": "es6",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist -s"
   },
   "keywords": [
     "es6"
@@ -12,8 +13,12 @@
   "author": "heroxiao",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-polyfill": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
-    "babel-preset-stage-2": "^6.11.0"
+    "babel-preset-stage-2": "^6.11.0",
+    "babel-register": "^6.9.0"
   }
 }
